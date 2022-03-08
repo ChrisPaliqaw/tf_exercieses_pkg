@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="box_bot_1_to_2_static_tf" 
+          args="0 0 0 0 0 0 frame_id box_bot_1/odom box_bot_2/odom">
+    </node>
+    <node pkg="tf" type="static_transform_publisher" name="box_bot_1_to_3_static_tf" 
+          args="0 0 0 0 0 0 frame_id box_bot_1/odom box_bot_3/odom">
+    </node>
+</launch>
